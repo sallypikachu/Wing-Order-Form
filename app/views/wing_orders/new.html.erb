@@ -15,15 +15,15 @@
   </div>
   <div>
     <%= f.label :quantity %>
-    <%= collection_radio_buttons(:wing_order, :quantity, @quantity_collection, :first, :last) %>
+    <%= f.collection_radio_buttons(:quantity, @quantity_collection, :first, :last) %>
   </div>
   <div>
-    <%= check_box_tag(:ranch_dressing) %>
-    <%= label_tag(:ranch_dressing, "Add Ranch Dressing") %>
+    <%= f.label :ranch_dressing, "Add Ranch Dressing" %>
+    <%= f.check_box :ranch_dressing %>
   </div>
   <div>
     <%= f.label :flavors %>
-    <%= collection_check_boxes(:wing_order, :flavor_ids, @flavor_collection, :id, :name) %>
+    <%= f.collection_check_boxes(:flavor_ids, @flavor_collection, :id, :name) %>
   </div>
   <div>
     <%= f.submit 'Place Order' %>

@@ -12,6 +12,8 @@ class WingOrdersController < ApplicationController
 
   def create
     @wing_order = WingOrder.new(wing_order_params)
+    require 'pry'
+    binding.pry
     if @wing_order.save
       flash[:notice] = "Wing order created!"
       redirect_to wing_orders_path
