@@ -1,0 +1,8 @@
+---
+title: "Wings Order Form"
+type: "exercise"
+description: "Refeactor a wing order form to use rails form helpers"
+visibility: "assign"
+tags: "rails, forms"
+ignore:
+  - "wings-order-form.md"
